@@ -1,8 +1,13 @@
 <template>
     <div>new hello world
         {{count}}
+        <button @click="inc">增加</button>
+        <div>
+            <template v-for="(item, index) in 3" :key="index">
+                <span >item-{{index}}</span><br>
+            </template>
+        </div>
     </div>
-    <button @click="inc">增加</button>
 </template>
 
 <script setup lang="ts">
